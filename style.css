@@ -14,8 +14,8 @@ a{color:var(--acc);text-decoration:none}
 .cta{margin-top:16px;display:flex;gap:12px}
 .btn{background:var(--acc);color:#001528;padding:10px 16px;border-radius:10px;font-weight:700}
 .btn--ghost{background:transparent;color:var(--fg);outline:1px solid #2b394d}
-.hero__avatar{width:150px;height:150px;border-radius:50%;
-  background:radial-gradient(circle at 30% 30%, #7ec2ff, #1865c7);
+.hero__avatar{ background:url('joyce.jpg') center/cover no-repeat; }
+  background:url('./images/joyce.jpg') center/cover no-repeat;
   justify-self:center;box-shadow:0 10px 40px rgba(0,0,0,.4)}
 
 .card{max-width:1050px;margin:20px auto;padding:22px;border:1px solid #1d2633;border-radius:14px;background:var(--card)}
