@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GithubLearning</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joyce | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Welcome to my site</h1>
+  <header class="nav">
+    <a class="logo" href="#">Joyce</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__text">
+      <h1>Hi, I’m <span>Joyce</span>.</h1>
+      <p>Frontend learner → future AI engineer. I ship fast, break things, then ship better.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn btn--ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="hero__avatar" aria-label="Avatar"></div>
+  </section>
+
+  <section id="about" class="card">
+    <h2>About</h2>
+    <p>
+      I’m learning full-stack foundations (HTML/CSS/JS, Git/GitHub) on a fast track into
+      Python + Machine Learning. I like clean UI, readable code, and shipping to production.
+    </p>
+    <ul class="tags">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git/GitHub</li>
+      <li>Python (incoming)</li><li>AI/ML (incoming)</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+
+    <div class="grid">
+      <article class="tile">
+        <h3>GithubLearning</h3>
+        <p>My first deployed site via GitHub Pages. Set up Node, Git, and automated deployment.</p>
+        <a class="link" href="https://joyce244.github.io/GithubLearning/" target="_blank">Live ↗</a>
+      </article>
+
+      <article class="tile">
+        <h3>Flexbox Photo Grid</h3>
+        <p>Responsive 3×3 gallery (Day 4). Clean layout with reusable utilities.</p>
+        <a class="link" href="#" onclick="alert('Coming soon')" aria-disabled="true">Coming soon</a>
+      </article>
+
+      <article class="tile">
+        <h3>Portfolio v2 (AI)</h3>
+        <p>Next: Python + a tiny AI demo (sentiment or image classifier) deployed as a web app.</p>
+        <a class="link" href="#" onclick="alert('In progress')">In progress</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email me: <a href="mailto:Nancy24436@gmail.com">Nancy24436@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Joyce244" target="_blank">@Joyce244</a></p>
+  </section>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Joyce. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
